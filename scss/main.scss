@@ -1,0 +1,424 @@
+@import 'reset';
+
+//  MIXIN BUSINESS & VARIABLES
+$orange: #dc5425;
+
+body {
+	font-family: 'Lato', sans-serif;
+	color:#fff;
+	text-align: center;
+}
+a,
+a:hover, a:active, a:focus {
+	border: 0;
+	border:none;
+	outline:0;
+	img {
+		border: 0;
+	}
+}
+header {
+	height: 600px;
+	background-image: url("../img/bg4.png");
+// 	background:  -webkit-linear-gradient(transparent, $orange 100%), url("../img/bg4.png") no-repeat 0 -140px;
+//  background:     -moz-linear-gradient(transparent, $orange 100%), url("../img/bg4.png") no-repeat 0 -140px;
+//  background:       -o-linear-gradient(transparent, $orange 100%), url("../img/bg4.png") no-repeat 0 -140px;
+//  background:          linear-gradient(transparent, $orange 100%), url("../img/bg4.png") no-repeat 0 -140px;
+    background-size: 100%;
+	position: relative;
+	a.logo {
+		width: 100px;
+		float: left;
+		padding: 0px 0px 0px 100px;
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+	}
+
+	ul {
+		float: right;
+		padding: 20px 100px 20px 0px;
+		text-transform: uppercase;
+		font-weight: bold;
+		-webkit-transition: all ease 0.5s;
+		-moz-transition: all ease 0.5s;
+		transition: all ease 0.5s;
+		margin-top: 30px;
+		img {
+			width: 180px;
+		}
+		li {
+			display: inline;
+			margin: 0 15px;
+			a {
+				text-decoration: none;
+				color: #fff;
+				ouline: 0;
+				&:hover {
+					color: $orange;
+				}
+			}
+		}
+	}
+
+	.overlay {
+		width: 800px;
+		clear: both;
+		position: absolute;
+		top: 32%;
+		left:50%;
+		margin-left: -400px;
+		font-size: 20px;
+		h3 {
+			font-size: 32px;
+			font-weight: bold;
+		}
+		a {
+			font-size: 16px;
+			display: block;
+			margin: 0 auto;
+			padding: 15px 20px;
+			border: 2px solid #fff;
+			margin-bottom: 20px;
+			margin-top: 20px;
+			width: 250px;
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			box-shadow: inset 0 0 0 0 $orange;
+			-webkit-transition: all ease 0.5s;
+			-moz-transition: all ease 0.5s;
+			transition: all ease 0.5s;
+			&:hover {
+				box-shadow: inset 300px 0 0 0 #fff;
+				color: $orange;
+			}
+		}
+
+	}
+}
+
+header .nav.sticky {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    ul li a{
+    	color: $orange;
+    	&:hover {
+    		font-weight: bold;
+    		// color:#fff;
+    	}
+    }
+ }
+
+
+.wrapper {
+	max-width: 800px;
+	margin: 0 auto;
+}
+section {
+	padding: 40px 0;
+}
+h2 {
+	padding: 30px 0;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+h3 {
+	padding: 20px 0;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+p {
+	margin-bottom: 10px;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	&:hover {
+		color: #666;
+	}
+}
+.about {
+	height: 500px;
+	margin: 0 auto;
+	background-color: $orange;
+
+    .about_us {
+    	display: block;
+    	margin: 0 auto;
+    	margin-bottom: 60px;
+    	p {
+    		font-size: 19px;
+    		&:nth-of-type(2) {
+    			margin-top: 18px;
+    			font-size: 16px;
+    			line-height: 25px;
+    			text-align: justify;
+    		}
+    	}
+    	ul {
+    		margin-top: 80px;
+    		overflow: hidden;
+    	 	li {
+    	 	letter-spacing: 2px;
+    		width: 22%;
+    		margin: 0 10px;
+    		float: left;
+    		display: inline;
+    		font-size: 18px;
+    		text-align: center;
+    		font-weight: bold;
+    		text-transform: uppercase;
+    		font-size: 14px;
+    		img {
+    			width: 100px;
+    			display: block;
+    			margin: 0 auto;
+    			margin-top: 10px;
+    		}
+    		p {
+    			letter-spacing: 0;
+    			line-height: 20px;
+    			margin-top: 15px;
+    			text-align: left;
+    			font-size: 16px;
+    			font-weight: normal;
+    			text-transform: none;
+    		}
+    	}
+    }
+    }
+}
+.sign_up {
+	background-color: #fff;
+	color:#666;
+	p {
+		font-size: 14px;
+	}
+}
+form {
+	margin: 10px 0;
+	overflow: hidden;
+	text-align: center;
+	margin: 0 auto;
+	width: 721px;
+}
+input {
+	padding: 15px 20px;
+	border: 2px solid $orange;
+	margin: 5px;
+	width: 250px;
+	background-color: transparent;
+	color: #666;
+	text-transform: uppercase;
+	display: block;
+	float: left;
+}
+input:focus {
+			border-radius: 2px;
+			outline: 0;
+		}
+input[type="submit"], input[type="button"] {
+	width: 100px;
+	text-transform: uppercase;
+	margin-left: 8px;
+	padding: 15px 20px;
+	border:$orange 2px solid;
+	background-color: transparent;
+	color: $orange;
+	box-shadow: inset 0 0 0 0 #fff;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+}
+input[type="submit"]:hover, input[type="button"]:hover {
+    box-shadow: inset 100px 0 0 0 $orange;
+    color: #fff;
+    cursor: pointer;
+}
+#mc_embed_signup_scroll {
+	position: relative;
+	overflow: hidden;
+	height: 130px;
+}
+#mce-responses {
+	position: absolute;
+	bottom: 10px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+	color: $orange;
+	text-transform: uppercase;
+ }
+
+
+.apply {
+	background-color: $orange;
+	overflow: hidden;
+	padding: 30px 10px;
+	clear: both;
+	a.apply_link {
+		display: block;
+		margin: 0 auto;
+		padding: 15px 20px;
+		border: 2px solid #fff;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		width: 250px;
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		box-shadow: inset 0 0 0 0 $orange;
+		-webkit-transition: all ease 0.5s;
+		-moz-transition: all ease 0.5s;
+		transition: all ease 0.5s;
+		&:hover {
+			box-shadow: inset 300px 0 0 0 #fff;
+			color: $orange;
+		}
+	}
+	ul {
+		overflow: hidden;
+		background-color: #FFF;
+		li {
+			display: block;
+			width: 25%;
+			float: left;
+			margin-bottom: 20px;
+			height: 100px;
+			position: relative;
+			&:nth-of-type(2) a img,
+			&:nth-of-type(10) a img {
+				padding-top: 10px;
+			}
+			&:nth-of-type(9) a img,
+			&:nth-of-type(12) a img{
+				padding-top: 0px;
+			}
+			&:nth-of-type(1) a img,
+			&:nth-of-type(3) a img  {
+				padding-top: 30px;
+			}
+			&:nth-of-type(11) a img,
+			&:nth-of-type(6) a img,
+			&:nth-of-type(7) a img{
+				padding-top: 20px;
+			}
+			&:nth-of-type(8) a img {
+				padding-top: 25px;
+			}
+			a {
+				width: 50%;
+				  height: 60%;
+				  margin: auto;
+				  position: absolute;
+				  top: 0; left: 0; bottom: 0; right: 0;
+			img {
+				width: 120px;
+			}
+			}
+		}
+	}
+	table {
+		background-color: #FFF;
+		td  {
+			padding: 0;
+			width: 200px;
+			a {
+				overflow: hidden;
+				width: 180px;
+				margin-top: 50%;
+				img {
+				width: 100%;
+			}
+			}
+	}
+	}
+}
+
+.sponsors {
+	color: $orange;
+	color: #666;
+	clear: both;
+	.venue img {
+		width: 140px;
+	}
+	.wrapper ul {
+		overflow: hidden;
+		li {
+		display: block;
+		width: 25%;
+		float: left;
+		margin-bottom: 20px;
+		height: 100px;
+		position: relative;
+		a {
+			width: 50%;
+			  height: 60%;
+			  margin: auto;
+			  position: absolute;
+			  top: 0; left: 0; bottom: 0; right: 0;
+		img {
+			width: 140px;
+		}
+	}
+	}
+}
+	.wrapper ul li:nth-of-type(6) a img {
+		padding-top:30px;
+		}
+	.wrapper ul li:nth-of-type(2) a img {
+		padding-top: 10px;
+	}
+	.wrapper ul li:nth-of-type(5) a img,
+	.wrapper ul li:nth-of-type(7) a img {
+		width: 90px;
+		margin-left: 24px;
+	}
+}
+footer {
+	clear:both;
+	overflow: hidden;
+	background-color: $orange;
+	padding-bottom: 30px;
+	a {
+		overflow: hidden;
+		margin: 0px 20px;
+		-webkit-transition: all ease 0.5s;
+		-moz-transition: all ease 0.5s;
+		transition: all ease 0.5s;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	svg {
+		width: 3%;
+		color: $orange;
+		-webkit-transition: all ease 0.5s;
+		-moz-transition: all ease 0.5s;
+		transition: all ease 0.5s;
+		path {
+			fill: #fff;
+		}
+	&:hover {
+		width: 3.5%;
+		cursor: pointer;
+	}
+	.totop {
+		position: fixed;
+		bottom:0;
+		right:0;
+	}
+	}
+
+}
