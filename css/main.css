@@ -290,6 +290,8 @@ a {
   height: 500px;
   margin: 0 auto;
   background-color: #dc5425; }
+  .about .overlay {
+    display: none; }
   .about .about_us {
     display: block;
     margin: 0 auto;
@@ -518,5 +520,49 @@ footer {
       position: fixed;
       bottom: 0;
       right: 0; }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  header {
+    height: 200px;
+    background-color: #dc5425; }
+    header .overlay {
+      display: none; }
+
+  .about {
+    height: 100%; }
+    .about .overlay {
+      padding: 0 5px;
+      background-color: #FFF;
+      color: #dc5425;
+      display: inline-block;
+      position: inherit;
+      margin-left: 0;
+      margin-top: -40px; }
+      .about .overlay h3 {
+        font-size: 32px;
+        font-weight: bold; }
+      .about .overlay a {
+        font-size: 16px;
+        display: block;
+        margin: 0 auto;
+        padding: 15px 20px;
+        border: 2px solid #dc5425;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 250px;
+        color: #dc5425;
+        text-decoration: none;
+        text-transform: uppercase;
+        box-shadow: inset 0 0 0 0 #fff;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        transition: all ease 0.5s; }
+        .about .overlay a:hover {
+          box-shadow: inset 300px 0 0 0 #dc5425;
+          color: #fff; }
+    .about .about_us ul li {
+      width: 100%;
+      float: none; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,67 @@
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+	.wrapper {
+		// width: 100%;
+	}
+	header {
+		height: 200px;
+		// display: none;
+		background-color: $orange;
+		// background-image: none;
+		.overlay {
+			display: none;
+		}
+	}
+	.about {
+		height: 100%;
+		.overlay {
+			padding: 0 5px;
+			background-color: #FFF;
+			color:$orange;
+			display: inline-block;
+			// width: 100px;
+			// clear: both;
+			position: inherit;
+			// top: 32%;
+			// left:50%;
+			margin-left: 0;
+			// font-size: 20px;
+			margin-top: -40px;
+			h3 {
+				font-size: 32px;
+				font-weight: bold;
+			}
+			a {
+				font-size: 16px;
+				display: block;
+				margin: 0 auto;
+				padding: 15px 20px;
+				border: 2px solid $orange;
+				margin-bottom: 20px;
+				margin-top: 20px;
+				width: 250px;
+				color: $orange;
+				text-decoration: none;
+				text-transform: uppercase;
+				box-shadow: inset 0 0 0 0 #fff;
+				-webkit-transition: all ease 0.5s;
+				-moz-transition: all ease 0.5s;
+				transition: all ease 0.5s;
+				&:hover {
+					box-shadow: inset 300px 0 0 0 $orange;
+					color: #fff;
+				}
+			}
+		}
+		.about_us ul li {
+			width: 100%;
+			float: none;
+		}
+
+	}
+}
+
+// @media (max-width: 320px) {
+
+// }

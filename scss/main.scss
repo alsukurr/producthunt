@@ -153,6 +153,10 @@ a {
 	margin: 0 auto;
 	background-color: $orange;
 
+	.overlay {
+		display: none;
+	}
+
     .about_us {
     	display: block;
     	margin: 0 auto;
@@ -166,6 +170,7 @@ a {
     			text-align: justify;
     		}
     	}
+
     	ul {
     		margin-top: 80px;
     		overflow: hidden;
@@ -422,3 +427,6 @@ footer {
 	}
 
 }
+
+//  MEDIA QUESRIES
+@import 'media';
