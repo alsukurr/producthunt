@@ -1,8 +1,15 @@
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
+	h2 {
+		font-size: 30px;
+	}
+	h3 {
+		font-size: 15px;
+	}
 	.wrapper {
 		// width: 100%;
+
 	}
 	header {
 		height: 200px;
@@ -11,6 +18,64 @@
 		// background-image: none;
 		.overlay {
 			display: none;
+		}
+		a.logo {
+			width: 80px;
+			padding: 0;
+			// float: none;
+		}
+		ul.main_menu {
+
+			display: none;
+			clear: both;
+			float: none;
+			padding: 5px 0 0 0;
+			margin: 0 auto;
+			width: 100%;
+			background-color: rgba(255, 255, 255, 0.6);
+			li {
+				display: block;
+				width: 100%;
+
+				margin: 0;
+				padding: 28px 0;
+				border-bottom: 1px $orange solid;
+				a {
+					color:$orange;
+				}
+			}
+		}
+		.menu_toggle {
+			display: block;
+			overflow: hidden;
+			height: 40px;
+			width: 40px;
+			// background-color: #FFF;
+			// border:1px #fff solid;
+			float: right;
+			margin: 25px 20px 0 0;
+			div {
+				height: 3px;
+				background-color: #999;
+				margin-bottom: 10px;
+				-webkit-transition: all  0.5s;
+				-moz-transition: all  0.5s;
+				transition: all  0.5s;
+			}
+		}
+		.menu_toggle.on .one {
+			transform: rotate(45deg) translate(12px, 8px);
+		}
+		.menu_toggle.on .two {
+			opacity: 0;
+		}
+		.menu_toggle.on .three {
+			transform: rotate(-45deg) translate(8px, -7px);
+		}
+
+		.nav.sticky {
+			// display: none;
+			background-color: rgba(255, 255, 255, 0.6);
 		}
 	}
 	.about {
@@ -27,7 +92,7 @@
 			// left:50%;
 			margin-left: 0;
 			// font-size: 20px;
-			margin-top: -40px;
+			margin-top: -30px;
 			h3 {
 				font-size: 32px;
 				font-weight: bold;
@@ -54,11 +119,103 @@
 				}
 			}
 		}
-		.about_us ul li {
-			width: 100%;
-			float: none;
+		.about_us {
+			h2,
+			p {
+				margin: 0 5px;
+			}
+			// padding: 0 5px;
+			ul {
+				margin: 0 10px;
+				margin-top: 30px;
+				li {
+				// margin-top: 100px;
+				padding-top: 25px;
+				// text-justify: auto;
+				// overflow: hidden;
+				margin: 0 auto;
+				width: 100%;
+				// float: none;
 		}
+	}
+	}
+	}
+	.sign_up {
+		.wrapper {
+			margin: 0 5px;
+			h3 {
+				font-size: 15px;
+				padding: 10px 0;
+			}
+			form {
+				width: 100%;
+				// margin: 0 auto;
+				input {
+					// float: none;
+					width: 85%;
+					// margin: 0 auto;
+					margin: 5px 0;
+				}
+				.clear {
+					position: absolute;
+					// position: relative;
+					top: 158px;
+					left: 50%;
+					margin-left: -50px;
+				}
+				input[type="submit"] {
+					// margin: 0 auto;
+					width: 100px;
 
+
+					position: absolute;
+				}
+			}
+			#mc_embed_signup_scroll {
+				height: 250px;
+				position: relative;
+			}
+		}
+	}
+	.apply {
+		ul {
+			li {
+				width: 50%;
+				margin-bottom: 0;
+				height: 80px;
+				margin-left: -10px;
+			}
+		}
+	}
+	.sponsors {
+		.wrapper {
+			margin:  0 5px;
+			ul {
+				li {
+					width: 50%;
+					margin-bottom: 0;
+					// height: 80px;
+					margin-left: -10px;
+					a {
+						img {
+							width: 110px;
+						}
+					}
+				}
+			}
+		}
+		.wrapper ul li:nth-of-type(5) a img,
+		.wrapper ul li:nth-of-type(7) a img {
+			width: 70px;
+		}
+	}
+	footer {
+		svg {
+			width: 9%;
+			&:hover {
+				width: 10%;
+			}
+		}
 	}
 }
 

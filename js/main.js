@@ -30,4 +30,11 @@ $(function() {
   $(window).scroll(function() {
       stickyNav();
   });
+
+  $(".menu_toggle").click(function() {
+    // console.log("hjbds");
+    $(this).toggleClass("on");
+    $(".main_menu").slideToggle("slow");
+  });
+
 });

@@ -192,14 +192,13 @@ header {
     overflow: hidden; }
     header a.logo img {
       width: 100%; }
+  header .menu_toggle {
+    display: none; }
   header ul {
     float: right;
     padding: 20px 100px 20px 0px;
     text-transform: uppercase;
     font-weight: bold;
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
-    transition: all ease 0.5s;
     margin-top: 30px; }
     header ul img {
       width: 180px; }
@@ -523,11 +522,58 @@ footer {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  h2 {
+    font-size: 30px; }
+
+  h3 {
+    font-size: 15px; }
+
   header {
     height: 200px;
     background-color: #dc5425; }
     header .overlay {
       display: none; }
+    header a.logo {
+      width: 80px;
+      padding: 0; }
+    header ul.main_menu {
+      display: none;
+      clear: both;
+      float: none;
+      padding: 5px 0 0 0;
+      margin: 0 auto;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.6); }
+      header ul.main_menu li {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 28px 0;
+        border-bottom: 1px #dc5425 solid; }
+        header ul.main_menu li a {
+          color: #dc5425; }
+    header .menu_toggle {
+      display: block;
+      overflow: hidden;
+      height: 40px;
+      width: 40px;
+      float: right;
+      margin: 25px 20px 0 0; }
+      header .menu_toggle div {
+        height: 3px;
+        background-color: #999;
+        margin-bottom: 10px;
+        -webkit-transition: all  0.5s;
+        -moz-transition: all  0.5s;
+        transition: all  0.5s; }
+    header .menu_toggle.on .one {
+      transform: rotate(45deg) translate(12px, 8px); }
+    header .menu_toggle.on .two {
+      opacity: 0; }
+    header .menu_toggle.on .three {
+      transform: rotate(-45deg) translate(8px, -7px); }
+    header .nav.sticky {
+      background-color: rgba(255, 255, 255, 0.6); }
 
   .about {
     height: 100%; }
@@ -538,7 +584,7 @@ footer {
       display: inline-block;
       position: inherit;
       margin-left: 0;
-      margin-top: -40px; }
+      margin-top: -30px; }
       .about .overlay h3 {
         font-size: 32px;
         font-weight: bold; }
@@ -561,8 +607,60 @@ footer {
         .about .overlay a:hover {
           box-shadow: inset 300px 0 0 0 #dc5425;
           color: #fff; }
-    .about .about_us ul li {
-      width: 100%;
-      float: none; } }
+    .about .about_us h2,
+    .about .about_us p {
+      margin: 0 5px; }
+    .about .about_us ul {
+      margin: 0 10px;
+      margin-top: 30px; }
+      .about .about_us ul li {
+        padding-top: 25px;
+        margin: 0 auto;
+        width: 100%; }
+
+  .sign_up .wrapper {
+    margin: 0 5px; }
+    .sign_up .wrapper h3 {
+      font-size: 15px;
+      padding: 10px 0; }
+    .sign_up .wrapper form {
+      width: 100%; }
+      .sign_up .wrapper form input {
+        width: 85%;
+        margin: 5px 0; }
+      .sign_up .wrapper form .clear {
+        position: absolute;
+        top: 158px;
+        left: 50%;
+        margin-left: -50px; }
+      .sign_up .wrapper form input[type="submit"] {
+        width: 100px;
+        position: absolute; }
+    .sign_up .wrapper #mc_embed_signup_scroll {
+      height: 250px;
+      position: relative; }
+
+  .apply ul li {
+    width: 50%;
+    margin-bottom: 0;
+    height: 80px;
+    margin-left: -10px; }
+
+  .sponsors .wrapper {
+    margin: 0 5px; }
+    .sponsors .wrapper ul li {
+      width: 50%;
+      margin-bottom: 0;
+      margin-left: -10px; }
+      .sponsors .wrapper ul li a img {
+        width: 110px; }
+  .sponsors .wrapper ul li:nth-of-type(5) a img,
+  .sponsors .wrapper ul li:nth-of-type(7) a img {
+    width: 70px; }
+
+  footer svg {
+    width: 9%; }
+    footer svg:hover {
+      width: 10%; } }
 
 /*# sourceMappingURL=main.css.map */
